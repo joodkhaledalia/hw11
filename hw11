@@ -1,0 +1,221 @@
+package javaapplication23;
+
+import java.util.Scanner;
+
+public class JavaApplication23 {
+
+    
+    public static void main(String[] args) {
+        Scanner input=new Scanner (System.in);
+    System.out.println("enter n: ");
+    int n;
+    n=input.nextInt();
+    for (int i=1 ; i<=n ; i++){
+        if(i%2!=0){
+          System.out.println(i);  
+
+
+
+
+
+import java.util.Scanner;
+
+public class JavaApplication23 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter n:");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            boolean prime = true;
+
+            if (i == 1) {
+                prime = false;
+            }
+
+            for (int n = 2; n < i; n++) {
+                if (i % n == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+
+            if (prime) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class HorizontalStars {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("*");
+        }
+
+        System.out.println();
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class SquareStars {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class TriangleStars {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class ReverseTriangle {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class PyramidStars {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class OvalStars {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+
+        for (int i = -n; i <= n; i++) {
+
+            int stars = (int) (2 * n *
+                    Math.sqrt(1 - (double) (i * i) / (n * n)));
+
+            for (int j = 0; j < n - stars / 2; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j < stars; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
